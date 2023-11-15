@@ -8,6 +8,7 @@ import static org.springframework.context.annotation.ComponentScan.*;
 
 @Configuration
 @ComponentScan(
+        basePackages = "hello.core",
         excludeFilters = @Filter(type = FilterType.ANNOTATION, classes = Configuration.class)
         /**
          * 컴포넌트 스캔을 사용하면 @Configuration 이 붙은 설정 정보도 자동으로 등록되기 때문에,
